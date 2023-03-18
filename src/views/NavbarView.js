@@ -76,7 +76,7 @@ class NavbarView extends React.Component {
                 <div className="af-class-navbar1_container">
                   <a href="#" className="af-class-navbar1_logo-link w-nav-brand"><img src="images/Group-1.svg" loading="lazy" alt className="af-class-navbar1_logo" /></a>
                   <nav role="navigation" className="af-class-navbar1_menu af-class-is-page-height-tablet w-nav-menu">
-                    <a href="job-listing" className="af-class-navbar1_link w-nav-link">Find Work</a>
+                    <a href="job-listing.html" className="af-class-navbar1_link w-nav-link">Find Work</a>
                     <a href="#" className="af-class-navbar1_link w-nav-link">Find Talent</a>
                     <a href="#" className="af-class-navbar1_link w-nav-link">Why Bitworx</a>
                     <div className="af-class-navbar1_menu-buttons">
