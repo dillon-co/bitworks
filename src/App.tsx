@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import IndexView from './views/IndexView';
 import JobListingView from './views/JobListingView';
+import NavbarView from './views/NavbarView';
 import './styles';
 import './scripts';
 
@@ -13,7 +14,7 @@ function App() {
       <div className="App">
         <header className="App-header">
 
-
+        <NavbarView/>
           <Switch>
             <Route exact path="/" component={IndexView} />
             <Route path="/job-listing" component={JobListingView} />
