@@ -57,11 +57,11 @@ class NavbarView extends React.Component {
     }
 
     return (
-      <span>
+      <span style={{position: 'sticky', top: '0', zIndex: '99'}}>
         <style dangerouslySetInnerHTML={{ __html: `
-          @import url(/css/normalize.css);
-          @import url(/css/webflow.css);
-          @import url(/css/joshuas-dandy-site-06ecb9.webflow.css);
+          @import url(../../public/css/normalize.css);
+          @import url(../../public/css/webflow.css);
+          @import url(../../public/css/joshuas-dandy-site-06ecb9.webflow.css);
 
 
             * {
@@ -74,76 +74,13 @@ class NavbarView extends React.Component {
             <div af-view="navbar">
               <div data-animation="default" className="af-class-navbar1_component w-nav" data-easing2="ease" af-view="navbar" data-easing="ease" data-collapse="medium" data-w-id="e50562dd-d6fb-c398-edc3-ed733b4edf4f" role="banner" data-duration={400}>
                 <div className="af-class-navbar1_container">
-                  <a href="#" className="af-class-navbar1_logo-link w-nav-brand"><img src="images/Group-1.svg" loading="lazy" alt className="af-class-navbar1_logo" /></a>
+                  <a href="/" className="af-class-navbar1_logo-link w-nav-brand"><img src="images/Group-1.svg" loading="lazy" alt className="af-class-navbar1_logo" /></a>
                   <nav role="navigation" className="af-class-navbar1_menu af-class-is-page-height-tablet w-nav-menu">
                     <a href="job-listing" className="af-class-navbar1_link w-nav-link">Find Work</a>
                     <a href="#" className="af-class-navbar1_link w-nav-link">Find Talent</a>
                     <a href="#" className="af-class-navbar1_link w-nav-link">Why Bitworx</a>
                     <div className="af-class-navbar1_menu-buttons">
                       <a data-w-id="f91da6c8-8135-a495-3ba1-4ea64ccf11c3" href="#" className="af-class-button af-class-is-small w-button">Login</a>
-                      <div style={{display: 'none', opacity: 0}} className="af-class-signup-modal3_component">
-                        <div className="af-class-signup-modal3_content-wrapper">
-                          <div data-current="Sign up" data-easing="ease" data-duration-in={300} data-duration-out={100} className="af-class-signup-modal3_tabs w-tabs">
-                            <div className="af-class-signup-modal3_tabs-menu w-tab-menu">
-                              <a data-w-tab="Sign up" className="af-class-signup-modal3_tab-link w-inline-block w-tab-link w--current">
-                                <div>Sign Up</div>
-                              </a>
-                              <a data-w-tab="Log in" className="af-class-signup-modal3_tab-link w-inline-block w-tab-link">
-                                <div>Login</div>
-                              </a>
-                            </div>
-                            <div className="af-class-signup-modal3_tabs-content w-tab-content">
-                              <div data-w-tab="Sign up" className="af-class-signup-modal3_signup w-tab-pane w--tab-active">
-                                <div className="af-class-signup-modal3_signup-form-block w-form">
-                                  <form id="wf-form-Sign-up-Form-10" name="wf-form-Sign-up-Form-10" data-name="Sign up Form" method="get" className="af-class-signup9_signup-form">
-                                    <div className="af-class-form-field-wrapper">
-                                      <div className="af-class-field-label">Wallet Address</div><input type="text" className="af-class-form-input w-input" maxLength={256} name="Wallet-Address-2" data-name="Wallet Address 2" placeholder id="Wallet-Address-2" required />
-                                    </div>
-                                    <div className="af-class-form-field-wrapper">
-                                      <div className="af-class-field-label">User name</div><input type="text" className="af-class-form-input w-input" maxLength={256} name="User-Name-4" data-name="User Name 4" placeholder id="User-Name-4" required />
-                                    </div>
-                                    <div className="af-class-form-field-wrapper">
-                                      <div className="af-class-field-label">Password</div><input type="password" className="af-class-form-input w-input" maxLength={256} name="Password-3" data-name="Password 3" placeholder id="Password-3" required />
-                                    </div>
-                                    <div className="af-class-form-field-wrapper">
-                                      <div className="af-class-field-label">Password confirmation</div><input type="password" className="af-class-form-input w-input" maxLength={256} name="Password-Confirmation-2" data-name="Password Confirmation 2" placeholder id="Password-Confirmation-2" required />
-                                    </div><input type="submit" defaultValue="Sign Up" data-wait="Please wait..." id="w-node-f91da6c8-8135-a495-3ba1-4ea64ccf11e3-273a7e62" className="af-class-button af-class-max-width-full w-button" />
-                                  </form>
-                                  <div className="af-class-success-message w-form-done">
-                                    <div className="af-class-success-text">Thank you! Your submission has been received!</div>
-                                  </div>
-                                  <div className="af-class-error-message w-form-fail">
-                                    <div className="af-class-error-text">Oops! Something went wrong while submitting the form.</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div data-w-tab="Log in" className="af-class-signup-modal3_login w-tab-pane">
-                                <div className="af-class-signup-modal3_login-form-block w-form">
-                                  <form id="wf-form-Log-in-Form-9" name="wf-form-Log-in-Form-9" data-name="Log in Form 9" method="get" className="af-class-signup-modal3_login-form">
-                                    <div className="af-class-form-field-wrapper">
-                                      <div className="af-class-field-label">Wallet Address</div><input type="text" className="af-class-form-input w-input" maxLength={256} name="User-Name-4" data-name="User Name 4" placeholder id="User-Name-4" required />
-                                    </div>
-                                    <div className="af-class-form-field-wrapper">
-                                      <div className="af-class-field-label-wrapper">
-                                        <div className="af-class-field-label">Password</div>
-                                      </div><input type="password" className="af-class-form-input w-input" maxLength={256} name="Password-3" data-name="Password 3" placeholder id="Password-3" required />
-                                    </div>
-                                    <div id="w-node-f91da6c8-8135-a495-3ba1-4ea64ccf11f6-273a7e62" className="w-layout-grid af-class-form-button-wrapper"><input type="submit" defaultValue="Log In" data-wait="Please wait..." id="w-node-f91da6c8-8135-a495-3ba1-4ea64ccf11f7-273a7e62" className="af-class-button af-class-max-width-full w-button" /></div>
-                                  </form>
-                                  <div className="af-class-success-message w-form-done">
-                                    <div className="af-class-success-text">Thank you! Your submission has been received!</div>
-                                  </div>
-                                  <div className="af-class-error-message w-form-fail">
-                                    <div className="af-class-error-text">Oops! Something went wrong while submitting the form.</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <a data-w-id="f91da6c8-8135-a495-3ba1-4ea64ccf11fe" href="#" className="af-class-signup-modal3_close-button w-inline-block"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031627a354aee7f_icon_close-modal-white.svg" loading="lazy" alt className="af-class-hide-mobile-landscape" /><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031623afe4aee7e_icon_close-modal.svg" loading="lazy" alt className="af-class-show-mobile-landscape" /></a>
-                        <div data-w-id="f91da6c8-8135-a495-3ba1-4ea64ccf1201" className="af-class-signup-modal3_background-overlay" />
-                      </div>
                     </div>
                   </nav>
                   <div className="af-class-navbar1_menu-button w-nav-button">
