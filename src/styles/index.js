@@ -1,7 +1,22 @@
 /* eslint-disable */
 
 const styles = [
-
+  {
+    type: 'href',
+    body: '/css/normalize.css',
+  },
+  {
+    type: 'href',
+    body: '/css/webflow.css',
+  },
+  {
+    type: 'href',
+    body: '/css/joshuas-dandy-site-06ecb9.webflow.css',
+  },
+  {
+    type: 'sheet',
+    body: '.af-view *{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}',
+  },
 ]
 
 const loadingStyles = styles.map((style) => {
