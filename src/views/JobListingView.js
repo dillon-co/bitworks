@@ -2,12 +2,10 @@
 
 import React from 'react'
 import { createScope, map, transformProxies } from './helpers'
-import '../styles'
-import '../scripts'
 
 const scripts = [
   { loading: fetch("https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63f55220e76aa41c96709c83").then(body => body.text()), isAsync: false },
-  { loading: fetch("../public/js/webflow.js").then(body => body.text()), isAsync: false },
+  { loading: fetch("js/webflow.js").then(body => body.text()), isAsync: false },
 ]
 
 let Controller
@@ -59,7 +57,7 @@ class JobListingView extends React.Component {
     }
 
     return (
-      <span style={{width: '100%'}}>
+      <span>
         <style dangerouslySetInnerHTML={{ __html: `
           @import url(/css/normalize.css);
           @import url(/css/webflow.css);
@@ -71,7 +69,7 @@ class JobListingView extends React.Component {
             -moz-osx-font-smoothing: grayscale;
           }
         ` }} />
-        <span className="af-view" >
+        <span className="af-view">
           <div>
             <div className="af-class-page-wrapper">
               <div className="af-class-global-styles w-embed">
