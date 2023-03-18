@@ -2860,8 +2860,8 @@
   width: 100%;
   height: auto;
   min-height: 4.5rem;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 0%;
+  padding-left: 0%;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
